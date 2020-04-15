@@ -13,9 +13,6 @@ public class Transaction {
     @ManyToOne
     private TransactionType transactionType;
 
-    @ManyToOne
-    private Account account;
-
     public Long getId() {
         return id;
     }
@@ -26,9 +23,5 @@ public class Transaction {
 
     public TransactionType getTransactionType() {
         return transactionType;
-    }
-
-    public Account getAccount() {
-        return account;
     }
 }

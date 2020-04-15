@@ -13,7 +13,7 @@ public class Account {
 
     private Float balance;
 
-    @OneToMany(mappedBy = "account")
+    @OneToMany
     private List<Transaction> transactions;
 
     @ManyToOne

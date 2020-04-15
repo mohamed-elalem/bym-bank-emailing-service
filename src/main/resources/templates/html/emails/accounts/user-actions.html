@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h3 th:text="'Hello, ' + ${user.username} + '!'">
+    Hello, user!
+</h3>
+
+<p>Your current balance is <strong th:text="${account.balance} + '$'"></strong></p>
+<h4>
+    Your last transaction information
+</h4>
+<p>Transaction type: <span th:text="${transactionType.name}"></span></p>
+<p>Amount: <span th:text="${transaction.amount}"></span></p>
+
+</body>
+</html>
