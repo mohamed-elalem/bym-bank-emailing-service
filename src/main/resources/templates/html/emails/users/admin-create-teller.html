@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h3 th:text="'Hello, ' + ${admin.username} + '!'">
+    Hello, user!
+</h3>
+<p th:text="'The account with username ' + ${teller.username} + ' has been created successfully'">The account with username blablabla has been created successfully</p>
+
+</body>
+</html>

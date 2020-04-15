@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:remove="all">Template for HTML email with inline image</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h3 th:text="'Hello, ' + ${teller.username} + '!'">
+    Hello, user!
+</h3>
+<p>Your account has been created successfully</p>
+<p>Please Login using these credentials:</p>
+<p th:text="'Your username: ' + ${teller.username}"></p>
+<p th:text="'Your password: ' + ${password}">Your password is 123456</p>
+
+</body>
+</html>
