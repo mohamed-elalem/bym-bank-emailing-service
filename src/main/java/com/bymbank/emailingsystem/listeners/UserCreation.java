@@ -16,7 +16,7 @@ public class UserCreation {
 
     @RabbitListener(queues = {"userCreation.user"})
     public void emailUserForCreation(Map<String, String> payload) {
-        this.userService.notifyUserWithCreation(Long.valueOf(payload.get("createdUserId")), payload.get("creatingUserId"));
+        this.userService.notifyUserWithCreation(Long.valueOf(payload.get("createdUserId")), payload.get("password"));
     }
 
     @RabbitListener(queues = {"userCreation.teller"})
